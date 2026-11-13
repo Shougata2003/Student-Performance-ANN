@@ -1,0 +1,44 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Datasets and private records
+data/
+*.csv
+*.xlsx
+*.xls
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Trained model artifacts
+models/
+*.keras
+*.pkl
+*.joblib
+
+# Logs
+*.log
+
+# IDE settings
+.vscode/
+
+# Temporary files
+*.tmp
+.DS_Store
+# Allow only required deployment model artifacts
+!models/
+models/*
+!models/student_performance.keras
+!models/scaler.pkl
+!models/label_encoder.pkl
